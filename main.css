@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone-image {
+    display: flex;
+}
+
+.phone-image img {
+    height: 700px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container .login-img {
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.container .login-field {
+    display: flex;
+    width: 100%;
+}
+
+.container .login-field input {
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 6px;
+    border: 1px solid #eaeaea;
+    background-color: #fafafa;
+    border-radius: 2px;
+    flex-grow: 1;
+}
+
+.container .login-btn {
+    display: flex;
+    width: 100%;
+}
+
+.container .login-btn a {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: #0095f6;
+    padding: 8px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.container .other {
+    display: flex;
+    width: 100%;
+}
+
+.container .other::after {
+    content: "";
+    border: 1px solid #eaeaea;
+    height: 0.1px;
+    flex: 1;
+    align-self: center;
+}
+
+.container .other::before {
+    content: "";
+    border: 1px solid #eaeaea;
+    height: 0.1px;
+    flex: 1;
+    align-self: center;
+}
+
+.container .other p {
+    padding: 8px 20px;
+    font-weight: bolder;
+    color: #9f9f9f;
+}
+
+.container .login-fc {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.container .login-fc a {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #385185;
+}
+
+.container .login-fc::before {
+    content: "";
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/facebook-icon.png);
+    background-size: contain;
+    
+}
+
+.container .login-forgot-pswd {
+    display: flex;
+    margin: 6px 0;
+}
+
+.container .login-forgot-pswd a {
+    color:#0095f6;
+}
+
+.register * {
+    font-size: 14px;
+}
+
+.register a {
+    color: #0095f6;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.download-app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.download-app p {
+    font-size: 16px;
+}
+
+.download-app img{
+    margin-top: 20px;
+    width: auto;
+    max-height: 50px;
+}
+
+@media(max-width: 992px) {
+    
+    .phone-image img {
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+    }
+}
+
